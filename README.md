@@ -11,6 +11,7 @@ This methodology is comprised of 3 parts
 - Part 3 is executed in Windows.
 - IBM provides free-account holders up to 500 minutes per month of the speech-to-text service. Big thank you to IBM for being cool. 
 - The original json_to_srt.py was grabbed from https://gist.github.com/tansautn and modified to be portable in a Windows environment. Thank you @tansautn for doing the heavy lifting!
+- Anywhere you see something in [brackets] you'll need to specify the information yourself
 
 # prerequisites:
 - ffmpeg, installed and accessible on system PATH
@@ -29,7 +30,7 @@ b) run
 c) ffmpeg will save [audio].mp3 in the current working folder
 
 # Part 2 - Generate JSON outfile using Watson speech-to-text
-a) Go to cloud.ibm.com and 
+a) Go to [IBM Cloud](cloud.ibm.com) and 
 
     i.   Generate a 1 time passcode by clicking top right corner -> Log in to CLI and API
     // steps ii to iv are a copypaste from the [IBM Cloud website](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted#getting-started-tutorial):
