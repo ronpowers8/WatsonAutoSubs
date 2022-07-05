@@ -33,10 +33,10 @@ c) ffmpeg will save [audio].mp3 in the current working folder
 a) Go to cloud.ibm.com and 
 
     i.   Generate a 1 time passcode by clicking top right corner -> Log in to CLI and API
-    // steps ii to iv are a copypaste from the IBM Cloud website (https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted#getting-started-tutorial):
+         # steps ii to iv are a copypaste from the IBM Cloud website (https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted#getting-started-tutorial):
     ii.  From the IBM Cloud Resource list (https://cloud.ibm.com/resources), click on your Speech to Text service instance to go to the Speech to Text service dashboard page.
     iii. On the Manage page, click Show Credentials to view your credentials.
-    iv.  Copy the API Key and URL values.
+    iv.  Copy the API Key and URL values. They are needed for step e) below
 
 b) From terminal, bang in
 
@@ -48,7 +48,7 @@ d) Add resource group
 
 	ibmcloud target -g Default
 
-e) Generate json transcript:
+e) Generate json transcript. Note that it will take a while for Watson to do its thing:
 
         curl -X POST -u "apikey:[APIkey]" \
         --header "Content-Type: audio/mp3" \ 
