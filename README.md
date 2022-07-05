@@ -30,7 +30,7 @@ b) run
 c) ffmpeg will save [audio].mp3 in the current working folder
 
 # Part 2 - Generate JSON outfile using Watson speech-to-text
-a) Go to [IBM Cloud](cloud.ibm.com) and 
+a) Go to cloud.ibm.com and 
 
     i.   Generate a 1 time passcode by clicking top right corner -> Log in to CLI and API
     // steps ii to iv are a copypaste from the [IBM Cloud website](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted#getting-started-tutorial):
