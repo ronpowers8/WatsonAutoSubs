@@ -6,7 +6,7 @@ This methodology is comprised of 3 parts
 2. Generate text-based json output of audio input using IBM Watson speech-to-text
 3. Convert json to .srt
 
-# notes:
+# Notes
 - Parts 1 and 2 are executed in Linux via Windows/WSL2. Some commands could be slightly different if working from PowerShell or Linux directly.
 - Part 3 is executed in Windows.
 - IBM provides free-account holders up to 500 minutes per month of the speech-to-text service. Big thank you to IBM for being cool. 
@@ -28,7 +28,7 @@ c) ffmpeg will save output.mp3 in the current working folder
 # Part 2 - Generate JSON outfile using Watson speech-to-text
 a) Go to cloud.ibm.com and 
     i.   Generate a 1 time passcode by clicking top right corner -> Log in to CLI and API
-    # steps ii to iv are a copypaste from IBM Cloud website (https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted#getting-started-tutorial):
+    // steps ii to iv are a copypaste from IBM Cloud website (https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted#getting-started-tutorial):
     ii.  From the IBM Cloud Resource list (https://cloud.ibm.com/resources), click on your Speech to Text service instance to go to the Speech to Text service dashboard page.
     iii. On the Manage page, click Show Credentials to view your credentials.
     iv.  Copy the API Key and URL values.
