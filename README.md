@@ -22,9 +22,11 @@ This methodology is comprised of 3 parts
 # Part 1 - Extract Audio from Video
 a) In a terminal, navigate to the folder containing your video file
 
-b) run "ffmpeg.exe -i [VideoFileName.extension] -vn [audio].mp3"
+b) run
 
-c) ffmpeg will save output.mp3 in the current working folder
+	ffmpeg.exe -i [VideoFileName.extension] -vn [audio].mp3
+
+c) ffmpeg will save [audio].mp3 in the current working folder
 
 # Part 2 - Generate JSON outfile using Watson speech-to-text
 a) Go to cloud.ibm.com and 
@@ -37,7 +39,7 @@ a) Go to cloud.ibm.com and
 
 b) From terminal, bang in
 
-	ibmcloud login -a https://cloud.ibm.com -u passcode -p [CODE GENERATED IN Part 2a)i]
+	ibmcloud login -a https://cloud.ibm.com -u passcode -p [ CODE GENERATED IN Part 2a)i ]
 
 c) Choose your region. For me it's 9 - us-south
 
@@ -49,19 +51,21 @@ e) Get json transcript:
 
         curl -X POST -u "apikey:[APIkey]" \
         --header "Content-Type: audio/mp3" \ 
-        --data-binary @output.mp3 \ 
+        --data-binary @[audio].mp3 \ 
         "[URL]/v1/recognize?timestamps=true" > [outputFile].json
 	
 f) curl will save [outputFile].json in the current working folder
 
 # Step 3
-a) Grab json_to_srt.py any way you like. Github can be a bit confusing for beginners (I include here); the easiest thing to do would be to copy-paste the code into a text editor like notepad++ and save it with extension .py
+a) Grab json_to_srt.py any way you like. Github can be a bit confusing for beginners (I include myself here); the easiest thing to do would be to copy-paste the code into a text editor like notepad++ and save it with extension .py
 
-b) Execute json_to_srt.py
+b) Execute json_to_srt.py. If you have python installed correctly you can double click the file from explorer and it will pop up a terminal window with the next step. Alternatively from a terminal you can enter 
 
-	- If you have python installed correctly you can double click the file from explorer and it will pop up a terminal window with the next step
-	- Alternatively from a terminal you can enter "python.exe .\json_to_srt.py" or simply "json_to_srt.py"
-		
+	python.exe .\json_to_srt.py
+or simply 
+
+	json_to_srt.py
+	
 c) The first output line of the .py file shows the current directory it's working in. This directory must be the same place your .json is located
 
 d) The .py file will prompt you to enter the filename. Note that the input is cAse sEnsiTIve
