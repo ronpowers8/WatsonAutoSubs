@@ -33,8 +33,8 @@ c) ffmpeg will save [audio].mp3 in the current working folder
 a) Go to cloud.ibm.com and 
 
     i.   Generate a 1 time passcode by clicking top right corner -> Log in to CLI and API
-    // steps ii to iv are a copypaste from the [IBM Cloud website](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted#getting-started-tutorial):
-    ii.  From the [IBM Cloud Resource list](https://cloud.ibm.com/resources), click on your Speech to Text service instance to go to the Speech to Text service dashboard page.
+    // steps ii to iv are a copypaste from the IBM Cloud website (https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted#getting-started-tutorial):
+    ii.  From the IBM Cloud Resource list (https://cloud.ibm.com/resources), click on your Speech to Text service instance to go to the Speech to Text service dashboard page.
     iii. On the Manage page, click Show Credentials to view your credentials.
     iv.  Copy the API Key and URL values.
 
@@ -48,7 +48,7 @@ d) Add resource group
 
 	ibmcloud target -g Default
 
-e) Get json transcript:
+e) Generate json transcript:
 
         curl -X POST -u "apikey:[APIkey]" \
         --header "Content-Type: audio/mp3" \ 
@@ -69,7 +69,7 @@ or simply
 	
 c) The first output line of the .py file shows the current directory it's working in. This directory must be the same place your .json is located
 
-d) The .py file will prompt you to enter the filename. Note that the input is cAse sEnsiTIve
+d) The .py file will prompt you to enter the filename. Note that input is cAse sEnsiTIve
 
 e) Shortly thereafter, a .srt file with the same name as your .json will appear in the directory
 
