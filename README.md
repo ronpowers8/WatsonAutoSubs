@@ -13,7 +13,7 @@ This methodology is comprised of 3 parts
 - The original json_to_srt.py was grabbed from https://gist.github.com/tansautn and modified to be portable in a Windows environment. Thank you @tansautn for doing the heavy lifting!
 - Anywhere you see something in [brackets] you'll need to specify the information yourself
 
-# prerequisites:
+# Prerequisites:
 - ffmpeg, installed and accessible on system PATH
 - python3, installed and accessible on system PATH
 - curl
